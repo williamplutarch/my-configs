@@ -1,0 +1,59 @@
+# =======================================================
+# 顶级美国 LLM 聚合精准分流策略 v2.2
+# Web + iOS App 完整覆盖 | Session Affinity 加固版
+# 日志实锤修订版 | 最后审查：2026-05
+# =======================================================
+
+# -------------------------------------------------------
+# 1. OpenAI / ChatGPT
+# -------------------------------------------------------
+DOMAIN-SUFFIX,openai.com,美国手动策略
+DOMAIN-SUFFIX,chatgpt.com,美国手动策略
+DOMAIN-SUFFIX,oaistatic.com,美国手动策略
+DOMAIN-SUFFIX,oaiusercontent.com,美国手动策略
+DOMAIN-SUFFIX,sora.com,美国手动策略
+DOMAIN,realtime.openai.com,美国手动策略
+DOMAIN,files.openai.com,美国手动策略
+DOMAIN-SUFFIX,openaiapi-prod.azureedge.net,美国手动策略
+
+# -------------------------------------------------------
+# 2. Anthropic / Claude
+# -------------------------------------------------------
+DOMAIN-SUFFIX,anthropic.com,美国手动策略
+DOMAIN-SUFFIX,claude.ai,美国手动策略
+DOMAIN-SUFFIX,claudeusercontent.com,美国手动策略
+DOMAIN-SUFFIX,anthropic-cdn.com,美国手动策略
+DOMAIN-SUFFIX,clerk.com,美国手动策略
+DOMAIN-SUFFIX,clerkapis.com,美国手动策略
+DOMAIN-SUFFIX,claude.com,美国手动策略
+DOMAIN-SUFFIX,clau.de,美国手动策略
+
+# -------------------------------------------------------
+# 3. Perplexity AI
+# -------------------------------------------------------
+DOMAIN-SUFFIX,perplexity.ai,美国手动策略
+DOMAIN-SUFFIX,pplx-res.cloudfront.net,美国手动策略
+DOMAIN-SUFFIX,statsig.com,美国手动策略
+DOMAIN-SUFFIX,statsigapi.net,美国手动策略
+
+# -------------------------------------------------------
+# 4. Google Gemini — Session Affinity 专项加固
+# 精准 DOMAIN 白名单，不污染 YouTube / Gmail 等其他 Google 服务
+# -------------------------------------------------------
+DOMAIN,robinfrontend-pa.googleapis.com,美国手动策略
+DOMAIN,llmfrontend-pa.googleapis.com,美国手动策略
+DOMAIN,contentreplacement-pa.googleapis.com,美国手动策略
+DOMAIN,proactivebackend-pa.googleapis.com,美国手动策略
+DOMAIN,imagefx-pa.googleapis.com,美国手动策略
+DOMAIN,assistant-pa.googleapis.com,美国手动策略
+DOMAIN,oauthaccountmanager.googleapis.com,美国手动策略
+DOMAIN,oauth2.googleapis.com,美国手动策略
+DOMAIN,securetoken.googleapis.com,美国手动策略
+DOMAIN,people-pa.googleapis.com,美国手动策略
+DOMAIN,subscriptionsfirstparty-pa.googleapis.com,美国手动策略
+DOMAIN,firebaselogging.googleapis.com,美国手动策略
+DOMAIN,play.googleapis.com,美国手动策略
+DOMAIN,clientservices.googleapis.com,美国手动策略
+DOMAIN-SUFFIX,gemini.google.com,美国手动策略
+DOMAIN-SUFFIX,generativeai.google,美国手动策略
+DOMAIN-SUFFIX,ai.google,美国手动策略
