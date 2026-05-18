@@ -12,9 +12,16 @@ DOMAIN-SUFFIX,chatgpt.com,美国手动策略
 DOMAIN-SUFFIX,oaistatic.com,美国手动策略
 DOMAIN-SUFFIX,oaiusercontent.com,美国手动策略
 DOMAIN-SUFFIX,sora.com,美国手动策略
+DOMAIN-SUFFIX,openaiapi-prod.azureedge.net,美国手动策略
 DOMAIN,realtime.openai.com,美国手动策略
 DOMAIN,files.openai.com,美国手动策略
-DOMAIN-SUFFIX,openaiapi-prod.azureedge.net,美国手动策略
+DOMAIN-SUFFIX,auth0.com,美国手动策略
+DOMAIN-SUFFIX,statsig.com,美国手动策略
+DOMAIN-SUFFIX,statsigapi.net,美国手动策略
+DOMAIN-SUFFIX,intercom.io,美国手动策略
+DOMAIN-SUFFIX,intercomcdn.com,美国手动策略
+DOMAIN-SUFFIX,workos.com,美国手动策略
+DOMAIN-SUFFIX,workoscdn.com,美国手动策略
 
 # -------------------------------------------------------
 # 2. Anthropic / Claude
@@ -33,28 +40,40 @@ DOMAIN-SUFFIX,clau.de,美国手动策略
 # -------------------------------------------------------
 DOMAIN-SUFFIX,perplexity.ai,美国手动策略
 DOMAIN-SUFFIX,pplx-res.cloudfront.net,美国手动策略
-DOMAIN-SUFFIX,statsig.com,美国手动策略
 DOMAIN-SUFFIX,statsigapi.net,美国手动策略
 
 # -------------------------------------------------------
 # 4. Google Gemini — Session Affinity 专项加固
 # 精准 DOMAIN 白名单，不污染 YouTube / Gmail 等其他 Google 服务
 # -------------------------------------------------------
+DOMAIN-SUFFIX,gemini.google.com,美国手动策略
+DOMAIN-SUFFIX,generativeai.google,美国手动策略
+DOMAIN-SUFFIX,ai.google,美国手动策略
+DOMAIN-SUFFIX,ai.google.dev,美国手动策略
+DOMAIN-SUFFIX,gemini.gstatic.com,美国手动策略
+DOMAIN,aistudio.google.com,美国手动策略
+DOMAIN,makersuite.google.com,美国手动策略
+DOMAIN,generativelanguage.googleapis.com,美国手动策略
+
+# gRPC 对话流（日志实锤，Session Affinity 核心）
 DOMAIN,robinfrontend-pa.googleapis.com,美国手动策略
 DOMAIN,llmfrontend-pa.googleapis.com,美国手动策略
 DOMAIN,contentreplacement-pa.googleapis.com,美国手动策略
 DOMAIN,proactivebackend-pa.googleapis.com,美国手动策略
+
+# Gemini 功能域（日志实锤）
 DOMAIN,imagefx-pa.googleapis.com,美国手动策略
 DOMAIN,assistant-pa.googleapis.com,美国手动策略
+DOMAIN,people-pa.googleapis.com,美国手动策略
+DOMAIN,subscriptionsfirstparty-pa.googleapis.com,美国手动策略
+DOMAIN,notifications-pa.googleapis.com,美国手动策略
+DOMAIN,play.googleapis.com,美国手动策略
+DOMAIN,clientservices.googleapis.com,美国手动策略
+DOMAIN,firebaselogging.googleapis.com,美国手动策略
+
+# 鉴权链（日志实锤）
 DOMAIN,oauthaccountmanager.googleapis.com,美国手动策略
 DOMAIN,oauth2.googleapis.com,美国手动策略
 DOMAIN,securetoken.googleapis.com,美国手动策略
-DOMAIN,people-pa.googleapis.com,美国手动策略
-DOMAIN,subscriptionsfirstparty-pa.googleapis.com,美国手动策略
-DOMAIN,firebaselogging.googleapis.com,美国手动策略
-DOMAIN,play.googleapis.com,美国手动策略
-DOMAIN,clientservices.googleapis.com,美国手动策略
-DOMAIN-SUFFIX,gemini.google.com,美国手动策略
-DOMAIN-SUFFIX,generativeai.google,美国手动策略
-DOMAIN-SUFFIX,ai.google,美国手动策略
-DOMAIN,notifications-pa.googleapis.com,美国手动策略
+DOMAIN,accounts.google.com,美国手动策略
+DOMAIN,myaccount.google.com,美国手动策略
