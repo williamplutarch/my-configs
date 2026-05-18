@@ -25,16 +25,16 @@ DOMAIN-SUFFIX,workos.com,美国手动策略
 DOMAIN-SUFFIX,workoscdn.com,美国手动策略
 
 # -------------------------------------------------------
-# 2. Anthropic / Claude (强制走物理隔离住宅节点)
+# 2. Anthropic / Claude (强制走代理链物理隔离住宅节点)
 # -------------------------------------------------------
-DOMAIN-SUFFIX,anthropic.com,IPRoyal-Claude
-DOMAIN-SUFFIX,claude.ai,IPRoyal-Claude
-DOMAIN-SUFFIX,claudeusercontent.com,IPRoyal-Claude
-DOMAIN-SUFFIX,anthropic-cdn.com,IPRoyal-Claude
-DOMAIN-SUFFIX,clerk.com,IPRoyal-Claude
-DOMAIN-SUFFIX,clerkapis.com,IPRoyal-Claude
-DOMAIN-SUFFIX,claude.com,IPRoyal-Claude
-DOMAIN-SUFFIX,clau.de,IPRoyal-Claude
+DOMAIN-SUFFIX,anthropic.com,Chain-Claude
+DOMAIN-SUFFIX,claude.ai,Chain-Claude
+DOMAIN-SUFFIX,claudeusercontent.com,Chain-Claude
+DOMAIN-SUFFIX,anthropic-cdn.com,Chain-Claude
+DOMAIN-SUFFIX,clerk.com,Chain-Claude
+DOMAIN-SUFFIX,clerkapis.com,Chain-Claude
+DOMAIN-SUFFIX,claude.com,Chain-Claude
+DOMAIN-SUFFIX,clau.de,Chain-Claude
 
 # -------------------------------------------------------
 # 3. Perplexity AI
