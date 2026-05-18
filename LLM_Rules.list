@@ -57,3 +57,4 @@ DOMAIN,clientservices.googleapis.com,美国手动策略
 DOMAIN-SUFFIX,gemini.google.com,美国手动策略
 DOMAIN-SUFFIX,generativeai.google,美国手动策略
 DOMAIN-SUFFIX,ai.google,美国手动策略
+DOMAIN,notifications-pa.googleapis.com,美国手动策略
