@@ -1,14 +1,26 @@
 payload:
-  # OpenAI / ChatGPT
+  # -------------------------------------------------------
+  # 1. OpenAI / ChatGPT
+  # -------------------------------------------------------
   - DOMAIN-SUFFIX,openai.com
   - DOMAIN-SUFFIX,chatgpt.com
   - DOMAIN-SUFFIX,oaistatic.com
   - DOMAIN-SUFFIX,oaiusercontent.com
   - DOMAIN-SUFFIX,sora.com
+  - DOMAIN-SUFFIX,openaiapi-prod.azureedge.net
   - DOMAIN,realtime.openai.com
   - DOMAIN,files.openai.com
-  - DOMAIN-SUFFIX,openaiapi-prod.azureedge.net
-  # Anthropic / Claude
+  - DOMAIN-SUFFIX,auth0.com
+  - DOMAIN-SUFFIX,statsig.com
+  - DOMAIN-SUFFIX,statsigapi.net
+  - DOMAIN-SUFFIX,intercom.io
+  - DOMAIN-SUFFIX,intercomcdn.com
+  - DOMAIN-SUFFIX,workos.com
+  - DOMAIN-SUFFIX,workoscdn.com
+
+  # -------------------------------------------------------
+  # 2. Anthropic / Claude
+  # -------------------------------------------------------
   - DOMAIN-SUFFIX,anthropic.com
   - DOMAIN-SUFFIX,claude.ai
   - DOMAIN-SUFFIX,claudeusercontent.com
@@ -17,27 +29,47 @@ payload:
   - DOMAIN-SUFFIX,clerkapis.com
   - DOMAIN-SUFFIX,claude.com
   - DOMAIN-SUFFIX,clau.de
-  # Perplexity AI
+
+  # -------------------------------------------------------
+  # 3. Perplexity AI
+  # -------------------------------------------------------
   - DOMAIN-SUFFIX,perplexity.ai
   - DOMAIN-SUFFIX,pplx-res.cloudfront.net
-  - DOMAIN-SUFFIX,statsig.com
   - DOMAIN-SUFFIX,statsigapi.net
-  # Google Gemini
+
+  # -------------------------------------------------------
+  # 4. Google Gemini
+  # 精准 DOMAIN 白名单，不使用全域通配
+  # 不含 googleapis.com / gstatic.com / googleusercontent.com 全域规则
+  # -------------------------------------------------------
+  - DOMAIN-SUFFIX,gemini.google.com
+  - DOMAIN-SUFFIX,generativeai.google
+  - DOMAIN-SUFFIX,ai.google
+  - DOMAIN-SUFFIX,ai.google.dev
+  - DOMAIN-SUFFIX,gemini.gstatic.com
+  - DOMAIN,aistudio.google.com
+  - DOMAIN,makersuite.google.com
+  - DOMAIN,generativelanguage.googleapis.com
+
+  # gRPC 对话流（日志实锤，Session Affinity 核心）
   - DOMAIN,robinfrontend-pa.googleapis.com
   - DOMAIN,llmfrontend-pa.googleapis.com
   - DOMAIN,contentreplacement-pa.googleapis.com
   - DOMAIN,proactivebackend-pa.googleapis.com
+
+  # Gemini 功能域（日志实锤）
   - DOMAIN,imagefx-pa.googleapis.com
   - DOMAIN,assistant-pa.googleapis.com
-  - DOMAIN,oauthaccountmanager.googleapis.com
-  - DOMAIN,oauth2.googleapis.com
-  - DOMAIN,securetoken.googleapis.com
   - DOMAIN,people-pa.googleapis.com
   - DOMAIN,subscriptionsfirstparty-pa.googleapis.com
-  - DOMAIN,firebaselogging.googleapis.com
   - DOMAIN,notifications-pa.googleapis.com
   - DOMAIN,play.googleapis.com
   - DOMAIN,clientservices.googleapis.com
-  - DOMAIN-SUFFIX,gemini.google.com
-  - DOMAIN-SUFFIX,generativeai.google
-  - DOMAIN-SUFFIX,ai.google
+  - DOMAIN,firebaselogging.googleapis.com
+
+  # 鉴权链（日志实锤）
+  - DOMAIN,oauthaccountmanager.googleapis.com
+  - DOMAIN,oauth2.googleapis.com
+  - DOMAIN,securetoken.googleapis.com
+  - DOMAIN,accounts.google.com
+  - DOMAIN,myaccount.google.com
