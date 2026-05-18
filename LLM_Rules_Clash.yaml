@@ -1,0 +1,43 @@
+payload:
+  # OpenAI / ChatGPT
+  - DOMAIN-SUFFIX,openai.com
+  - DOMAIN-SUFFIX,chatgpt.com
+  - DOMAIN-SUFFIX,oaistatic.com
+  - DOMAIN-SUFFIX,oaiusercontent.com
+  - DOMAIN-SUFFIX,sora.com
+  - DOMAIN,realtime.openai.com
+  - DOMAIN,files.openai.com
+  - DOMAIN-SUFFIX,openaiapi-prod.azureedge.net
+  # Anthropic / Claude
+  - DOMAIN-SUFFIX,anthropic.com
+  - DOMAIN-SUFFIX,claude.ai
+  - DOMAIN-SUFFIX,claudeusercontent.com
+  - DOMAIN-SUFFIX,anthropic-cdn.com
+  - DOMAIN-SUFFIX,clerk.com
+  - DOMAIN-SUFFIX,clerkapis.com
+  - DOMAIN-SUFFIX,claude.com
+  - DOMAIN-SUFFIX,clau.de
+  # Perplexity AI
+  - DOMAIN-SUFFIX,perplexity.ai
+  - DOMAIN-SUFFIX,pplx-res.cloudfront.net
+  - DOMAIN-SUFFIX,statsig.com
+  - DOMAIN-SUFFIX,statsigapi.net
+  # Google Gemini
+  - DOMAIN,robinfrontend-pa.googleapis.com
+  - DOMAIN,llmfrontend-pa.googleapis.com
+  - DOMAIN,contentreplacement-pa.googleapis.com
+  - DOMAIN,proactivebackend-pa.googleapis.com
+  - DOMAIN,imagefx-pa.googleapis.com
+  - DOMAIN,assistant-pa.googleapis.com
+  - DOMAIN,oauthaccountmanager.googleapis.com
+  - DOMAIN,oauth2.googleapis.com
+  - DOMAIN,securetoken.googleapis.com
+  - DOMAIN,people-pa.googleapis.com
+  - DOMAIN,subscriptionsfirstparty-pa.googleapis.com
+  - DOMAIN,firebaselogging.googleapis.com
+  - DOMAIN,notifications-pa.googleapis.com
+  - DOMAIN,play.googleapis.com
+  - DOMAIN,clientservices.googleapis.com
+  - DOMAIN-SUFFIX,gemini.google.com
+  - DOMAIN-SUFFIX,generativeai.google
+  - DOMAIN-SUFFIX,ai.google
