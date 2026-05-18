@@ -1,7 +1,8 @@
 # =======================================================
-# 顶级美国 LLM 聚合精准分流策略 v2.2
+# 顶级美国 LLM 聚合精准分流策略 v2.3
 # Web + iOS App 完整覆盖 | Session Affinity 加固版
-# 日志实锤修订版 | 最后审查：2026-05
+# 独立物理隔离版：Claude 流量强制指向 IPRoyal 本地节点
+# 最后审查：2026-05
 # =======================================================
 
 # -------------------------------------------------------
@@ -24,16 +25,16 @@ DOMAIN-SUFFIX,workos.com,美国手动策略
 DOMAIN-SUFFIX,workoscdn.com,美国手动策略
 
 # -------------------------------------------------------
-# 2. Anthropic / Claude
+# 2. Anthropic / Claude (强制走物理隔离住宅节点)
 # -------------------------------------------------------
-DOMAIN-SUFFIX,anthropic.com,美国手动策略
-DOMAIN-SUFFIX,claude.ai,美国手动策略
-DOMAIN-SUFFIX,claudeusercontent.com,美国手动策略
-DOMAIN-SUFFIX,anthropic-cdn.com,美国手动策略
-DOMAIN-SUFFIX,clerk.com,美国手动策略
-DOMAIN-SUFFIX,clerkapis.com,美国手动策略
-DOMAIN-SUFFIX,claude.com,美国手动策略
-DOMAIN-SUFFIX,clau.de,美国手动策略
+DOMAIN-SUFFIX,anthropic.com,IPRoyal-Claude
+DOMAIN-SUFFIX,claude.ai,IPRoyal-Claude
+DOMAIN-SUFFIX,claudeusercontent.com,IPRoyal-Claude
+DOMAIN-SUFFIX,anthropic-cdn.com,IPRoyal-Claude
+DOMAIN-SUFFIX,clerk.com,IPRoyal-Claude
+DOMAIN-SUFFIX,clerkapis.com,IPRoyal-Claude
+DOMAIN-SUFFIX,claude.com,IPRoyal-Claude
+DOMAIN-SUFFIX,clau.de,IPRoyal-Claude
 
 # -------------------------------------------------------
 # 3. Perplexity AI
@@ -44,7 +45,6 @@ DOMAIN-SUFFIX,statsigapi.net,美国手动策略
 
 # -------------------------------------------------------
 # 4. Google Gemini — Session Affinity 专项加固
-# 精准 DOMAIN 白名单，不污染 YouTube / Gmail 等其他 Google 服务
 # -------------------------------------------------------
 DOMAIN-SUFFIX,gemini.google.com,美国手动策略
 DOMAIN-SUFFIX,generativeai.google,美国手动策略
@@ -55,13 +55,13 @@ DOMAIN,aistudio.google.com,美国手动策略
 DOMAIN,makersuite.google.com,美国手动策略
 DOMAIN,generativelanguage.googleapis.com,美国手动策略
 
-# gRPC 对话流（日志实锤，Session Affinity 核心）
+# gRPC 对话流
 DOMAIN,robinfrontend-pa.googleapis.com,美国手动策略
 DOMAIN,llmfrontend-pa.googleapis.com,美国手动策略
 DOMAIN,contentreplacement-pa.googleapis.com,美国手动策略
 DOMAIN,proactivebackend-pa.googleapis.com,美国手动策略
 
-# Gemini 功能域（日志实锤）
+# Gemini 功能域
 DOMAIN,imagefx-pa.googleapis.com,美国手动策略
 DOMAIN,assistant-pa.googleapis.com,美国手动策略
 DOMAIN,people-pa.googleapis.com,美国手动策略
@@ -71,7 +71,7 @@ DOMAIN,play.googleapis.com,美国手动策略
 DOMAIN,clientservices.googleapis.com,美国手动策略
 DOMAIN,firebaselogging.googleapis.com,美国手动策略
 
-# 鉴权链（日志实锤）
+# 鉴权链
 DOMAIN,oauthaccountmanager.googleapis.com,美国手动策略
 DOMAIN,oauth2.googleapis.com,美国手动策略
 DOMAIN,securetoken.googleapis.com,美国手动策略
