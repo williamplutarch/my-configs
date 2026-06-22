@@ -2,7 +2,7 @@
 # 顶级美国 LLM 聚合精准分流策略 v3.0
 # Web + iOS App 完整覆盖
 # OpenAI/Perplexity → 美国手动策略
-# Google 全家桶（Search/YouTube/Gemini）→ 美国自动策略
+# Google 全家桶（Search/YouTube/Gemini）→ 美国手动策略
 # Claude → IPRoyal 本地节点（独立隔离，未在此文件）
 # 最后审查：2026-06
 # =======================================================
@@ -33,70 +33,70 @@ DOMAIN-SUFFIX,perplexity.ai,美国手动策略
 DOMAIN-SUFFIX,pplx-res.cloudfront.net,美国手动策略
 
 # =======================================================
-# 3. Google 全家桶 → 美国自动策略
+# 3. Google 全家桶 → 美国手动策略
 #    Search / YouTube / Gemini / 账号 / Play / CDN
 # =======================================================
 
 # ---------- Gemini 专项（精确域名优先）----------
-DOMAIN-SUFFIX,gemini.google.com,美国自动策略
-DOMAIN-SUFFIX,generativeai.google,美国自动策略
-DOMAIN-SUFFIX,ai.google,美国自动策略
-DOMAIN-SUFFIX,ai.google.dev,美国自动策略
-DOMAIN-SUFFIX,gemini.gstatic.com,美国自动策略
-DOMAIN,aistudio.google.com,美国自动策略
-DOMAIN,makersuite.google.com,美国自动策略
-DOMAIN,generativelanguage.googleapis.com,美国自动策略
-DOMAIN,alkalimakersuite-pa.clients6.google.com,美国自动策略
+DOMAIN-SUFFIX,gemini.google.com,美国手动策略
+DOMAIN-SUFFIX,generativeai.google,美国手动策略
+DOMAIN-SUFFIX,ai.google,美国手动策略
+DOMAIN-SUFFIX,ai.google.dev,美国手动策略
+DOMAIN-SUFFIX,gemini.gstatic.com,美国手动策略
+DOMAIN,aistudio.google.com,美国手动策略
+DOMAIN,makersuite.google.com,美国手动策略
+DOMAIN,generativelanguage.googleapis.com,美国手动策略
+DOMAIN,alkalimakersuite-pa.clients6.google.com,美国手动策略
 # Gemini gRPC 对话流
-DOMAIN,robinfrontend-pa.googleapis.com,美国自动策略
-DOMAIN,llmfrontend-pa.googleapis.com,美国自动策略
-DOMAIN,contentreplacement-pa.googleapis.com,美国自动策略
-DOMAIN,proactivebackend-pa.googleapis.com,美国自动策略
-DOMAIN,waa-pa.googleapis.com,美国自动策略
+DOMAIN,robinfrontend-pa.googleapis.com,美国手动策略
+DOMAIN,llmfrontend-pa.googleapis.com,美国手动策略
+DOMAIN,contentreplacement-pa.googleapis.com,美国手动策略
+DOMAIN,proactivebackend-pa.googleapis.com,美国手动策略
+DOMAIN,waa-pa.googleapis.com,美国手动策略
 # Gemini 功能域
-DOMAIN,imagefx-pa.googleapis.com,美国自动策略
-DOMAIN,assistant-pa.googleapis.com,美国自动策略
-DOMAIN,subscriptionsfirstparty-pa.googleapis.com,美国自动策略
+DOMAIN,imagefx-pa.googleapis.com,美国手动策略
+DOMAIN,assistant-pa.googleapis.com,美国手动策略
+DOMAIN,subscriptionsfirstparty-pa.googleapis.com,美国手动策略
 
 # ---------- YouTube（App + 网页 + 视频流）----------
-DOMAIN-SUFFIX,youtube.com,美国自动策略
-DOMAIN-SUFFIX,youtu.be,美国自动策略
-DOMAIN-SUFFIX,youtube-nocookie.com,美国自动策略
-DOMAIN-SUFFIX,googlevideo.com,美国自动策略
-DOMAIN-SUFFIX,ytimg.com,美国自动策略
-DOMAIN,youtubei.googleapis.com,美国自动策略
-DOMAIN,youtube.googleapis.com,美国自动策略
-DOMAIN,yt3.ggpht.com,美国自动策略
+DOMAIN-SUFFIX,youtube.com,美国手动策略
+DOMAIN-SUFFIX,youtu.be,美国手动策略
+DOMAIN-SUFFIX,youtube-nocookie.com,美国手动策略
+DOMAIN-SUFFIX,googlevideo.com,美国手动策略
+DOMAIN-SUFFIX,ytimg.com,美国手动策略
+DOMAIN,youtubei.googleapis.com,美国手动策略
+DOMAIN,youtube.googleapis.com,美国手动策略
+DOMAIN,yt3.ggpht.com,美国手动策略
 
 # ---------- Google 账号 / 鉴权链 ----------
-DOMAIN,oauthaccountmanager.googleapis.com,美国自动策略
-DOMAIN,oauth2.googleapis.com,美国自动策略
-DOMAIN,securetoken.googleapis.com,美国自动策略
-DOMAIN,accounts.google.com,美国自动策略
-DOMAIN,myaccount.google.com,美国自动策略
-DOMAIN,people-pa.googleapis.com,美国自动策略
+DOMAIN,oauthaccountmanager.googleapis.com,美国手动策略
+DOMAIN,oauth2.googleapis.com,美国手动策略
+DOMAIN,securetoken.googleapis.com,美国手动策略
+DOMAIN,accounts.google.com,美国手动策略
+DOMAIN,myaccount.google.com,美国手动策略
+DOMAIN,people-pa.googleapis.com,美国手动策略
 
 # ---------- Google 搜索 / 主站 ----------
-DOMAIN-SUFFIX,google.com,美国自动策略
-DOMAIN-SUFFIX,google.com.hk,美国自动策略
-DOMAIN-SUFFIX,goo.gl,美国自动策略
-DOMAIN-SUFFIX,g.co,美国自动策略
+DOMAIN-SUFFIX,google.com,美国手动策略
+DOMAIN-SUFFIX,google.com.hk,美国手动策略
+DOMAIN-SUFFIX,goo.gl,美国手动策略
+DOMAIN-SUFFIX,g.co,美国手动策略
 
 # ---------- Google CDN / API / 静态资源（兜底关键）----------
-DOMAIN-SUFFIX,googleapis.com,美国自动策略
-DOMAIN-SUFFIX,gstatic.com,美国自动策略
-DOMAIN-SUFFIX,ggpht.com,美国自动策略
-DOMAIN-SUFFIX,googleusercontent.com,美国自动策略
-DOMAIN-SUFFIX,1e100.net,美国自动策略
-DOMAIN-SUFFIX,gvt0.com,美国自动策略
-DOMAIN-SUFFIX,gvt1.com,美国自动策略
-DOMAIN-SUFFIX,gvt2.com,美国自动策略
-DOMAIN-SUFFIX,gvt3.com,美国自动策略
+DOMAIN-SUFFIX,googleapis.com,美国手动策略
+DOMAIN-SUFFIX,gstatic.com,美国手动策略
+DOMAIN-SUFFIX,ggpht.com,美国手动策略
+DOMAIN-SUFFIX,googleusercontent.com,美国手动策略
+DOMAIN-SUFFIX,1e100.net,美国手动策略
+DOMAIN-SUFFIX,gvt0.com,美国手动策略
+DOMAIN-SUFFIX,gvt1.com,美国手动策略
+DOMAIN-SUFFIX,gvt2.com,美国手动策略
+DOMAIN-SUFFIX,gvt3.com,美国手动策略
 
 # ---------- Google Play / 推送 / 其他后端 ----------
-DOMAIN-SUFFIX,play.google.com,美国自动策略
-DOMAIN-SUFFIX,android.googleapis.com,美国自动策略
-DOMAIN,play.googleapis.com,美国自动策略
-DOMAIN,clientservices.googleapis.com,美国自动策略
-DOMAIN,firebaselogging.googleapis.com,美国自动策略
-DOMAIN,notifications-pa.googleapis.com,美国自动策略
+DOMAIN-SUFFIX,play.google.com,美国手动策略
+DOMAIN-SUFFIX,android.googleapis.com,美国手动策略
+DOMAIN,play.googleapis.com,美国手动策略
+DOMAIN,clientservices.googleapis.com,美国手动策略
+DOMAIN,firebaselogging.googleapis.com,美国手动策略
+DOMAIN,notifications-pa.googleapis.com,美国手动策略
